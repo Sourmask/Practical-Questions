@@ -21,7 +21,8 @@ def Reverse():
     with open("notes1.txt","r") as f:
         data=f.read()
         data=data.split()
-        for i in range(len(data)):
+        for i in range(len(data)-1,-1,-1):
             print(data[i])
 
+Reverse()
         
