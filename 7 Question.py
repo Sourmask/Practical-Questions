@@ -37,9 +37,9 @@ def plus5():
                 original=line
                 line=line.split()
                 if len(line)>5:
-                    print(original)
+                    print(line)
 
 add()
 startA()
-print("---------------------")
+print("--------------------------------")
 plus5()

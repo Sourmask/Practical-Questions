@@ -17,7 +17,12 @@ def FindSum(L):
     return sum
 
 def INDEX_LIST(L):
-    global indexList
+    indexList=[]
     for i in range(len(L)):
         if L[i]!=0:
             indexList.append(i)
+    return indexList
+
+print(FindSum(L))
+print(INDEX_LIST(L))
+
