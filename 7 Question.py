@@ -10,6 +10,7 @@ An alarm goes off by going on.”
 (iii)To read the content of the file and display all lines which are more than 5 words in it 
 '''
 
+
 def add():
     lst=["Boxing rings are square",
         "Actions speak louder than words",
@@ -23,7 +24,7 @@ def add():
 
 def startA():
     with open("apple.txt","r") as f:
-        para=f.readline()
+        para=f.readlines()
         for line in para:
             for word in line:
                 if word[0]=="A":
@@ -31,8 +32,14 @@ def startA():
 
 def plus5():
     with open("apple.txt","r") as f:
-        para=f.readline()
+        para=f.readlines()
         for line in para:
+                original=line
                 line=line.split()
                 if len(line)>5:
-                    print(line)
+                    print(original)
+
+add()
+startA()
+print("---------------------")
+plus5()
