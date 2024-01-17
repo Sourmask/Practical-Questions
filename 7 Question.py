@@ -36,3 +36,8 @@ def plus5():
                 line=line.split()
                 if len(line)>5:
                     print(line)
+add()
+print("#"*60)
+startA()
+print("#"*60)
+plus5()
